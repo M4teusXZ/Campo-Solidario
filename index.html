@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Campo Solidário</title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+    <link rel="preload" href="imagens/fundo-noite.png" as="image">
+
+</head>
+
+<body>
+
+<!-- LOADING -->
+
+<div id="loading">
+
+    <div class="loader"></div>
+
+    <h2>
+
+        Campo Solidário
+
+    </h2>
+
+</div>
+
+<!-- ACESSIBILIDADE -->
+
+<div class="acessibilidade">
+
+    <button class="acess-btn"
+
+    onclick="toggleAcessibilidade()">
+
+        ♿
+
+    </button>
+
+    <div id="menuAcessibilidade"
+    class="menu-acessibilidade">
+
+        <button onclick="aumentarFonte()">
+
+            A+
+
+        </button>
+
+        <button onclick="diminuirFonte()">
+
+            A-
+
+        </button>
+
+        <button id="darkModeBtn">
+
+            🌙
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- HOME -->
+
+<section id="home" class="screen">
+
+    <div class="bg-shape green-shape"></div>
+    <div class="bg-shape blue-shape"></div>
+
+    <div class="home-content">
+
+        <h1 class="logo">
+
+            Campo Solidário
+
+        </h1>
+
+        <p class="slogan">
+
+            Conectando pequenos produtores
+            a instituições que precisam
+            de alimentos.
+
+        </p>
+
+        <div class="home-buttons">
+
+            <button class="btn green"
+            onclick="trocarTela('agricultor')">
+
+                Sou Agricultor
+
+            </button>
+
+            <button class="btn blue"
+            onclick="trocarTela('instituicao')">
+
+                Sou Instituição
+
+            </button>
+
+        </div>
+
+        <div class="menu-extra">
+
+            <button class="mini-btn"
+            onclick="trocarTela('estatisticas')">
+
+                📊 Estatísticas
+
+            </button>
+
+            <button class="mini-btn"
+            onclick="trocarTela('funciona')">
+
+                🌱 Como Funciona
+
+            </button>
+
+        </div>
+
+        <div class="sobre-box">
+
+            <h2>
+
+                Sobre o Projeto
+
+            </h2>
+
+            <p>
+
+                O Campo Solidário conecta
+                pequenos produtores rurais
+                a instituições sociais,
+                ajudando a reduzir o
+                desperdício de alimentos
+                e levando comida para
+                famílias e instituições que precisam.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ESTATÍSTICAS -->
+
+<section id="estatisticas" class="screen">
+
+    <div class="bg-shape green-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('home')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="stats-container">
+
+        <h2 class="titulo-stats">
+
+            📊 Impacto do Projeto
+
+        </h2>
+
+        <p class="subtitulo-stats">
+
+            Pequenas ações gerando grandes mudanças.
+
+        </p>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h3>
+
+                    1.250kg
+
+                </h3>
+
+                <p>
+
+                    Alimentos doados
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+
+                    18
+
+                </h3>
+
+                <p>
+
+                    Instituições ajudadas
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+
+                    320
+
+                </h3>
+
+                <p>
+
+                    Famílias beneficiadas
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>
+
+                    42
+
+                </h3>
+
+                <p>
+
+                    Agricultores parceiros
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="ranking-grid">
+
+            <div class="impacto-box">
+
+                <h3>
+
+                    🏆 Maior produtor da semana
+
+                </h3>
+
+                <p>
+
+                    Fazenda Boa Esperança
+                    com 230kg doados.
+
+                </p>
+
+            </div>
+
+            <div class="impacto-box">
+
+                <h3>
+
+                    ❤️ Instituição destaque
+
+                </h3>
+
+                <p>
+
+                    Lar Esperança recebeu
+                    410kg de alimentos.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COMO FUNCIONA -->
+
+<section id="funciona" class="screen">
+
+    <div class="bg-shape blue-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('home')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="funciona-container">
+
+        <h2 class="titulo-funciona">
+
+    🌱 Como Funciona
+
+</h2>
+
+<p class="subtitulo-funciona">
+
+    Um processo simples que conecta
+    agricultores e instituições.
+
+</p>
+        <div class="passos">
+
+            <div class="passo">
+
+                <h3>
+
+                    🌾 Cadastro
+
+                </h3>
+
+                <p>
+
+                    Agricultores registram
+                    alimentos disponíveis.
+
+                </p>
+
+            </div>
+
+            <div class="passo">
+
+                <h3>
+
+                    🔎 Busca
+
+                </h3>
+
+                <p>
+
+                    Instituições encontram
+                    doações próximas.
+
+                </p>
+
+            </div>
+
+            <div class="passo">
+
+                <h3>
+
+                    💬 Contato
+
+                </h3>
+
+                <p>
+
+                    O contato é feito
+                    diretamente pelo chat.
+
+                </p>
+
+            </div>
+
+            <div class="passo">
+
+                <h3>
+
+                    ❤️ Entrega
+
+                </h3>
+
+                <p>
+
+                    Os alimentos chegam
+                    às famílias.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- AGRICULTOR -->
+
+<section id="agricultor" class="screen">
+
+    <div class="bg-shape green-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('home')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="card">
+
+        <h2>
+
+            Registrar Doação
+
+        </h2>
+
+        <input type="text" id="cidade"
+        placeholder="cidade" class="doacao-input" required>
+
+        <input type="text"
+        placeholder="Telefone" class="doacao-input" required>
+
+        <input type="text" id="fazenda"
+        placeholder="Nome da fazenda" class="doacao-input" required>
+
+        <input type="text" id="alimento"
+        placeholder="Alimento disponível" class="doacao-input" required>
+
+        <input type="text" id="quantidade"
+        placeholder="Quantidade" class="doacao-input" required>
+
+        <select id="categoria"
+         class="doacao-input categoria-select"
+        required>
+    <option value="">Categoria</option>
+
+    <option value="fruta">Fruta</option>
+
+    <option value="verdura">Verdura</option>
+
+
+</select>
+
+        <button class="confirm green"
+        onclick="registrarDoacao()">
+
+            Registrar Doação
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- INSTITUIÇÃO -->
+
+<section id="instituicao" class="screen">
+
+    <div class="bg-shape blue-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('home')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="card">
+
+        <h2>
+
+            Buscar Doações
+
+        </h2>
+
+        <input type="text"
+        placeholder="Nome da instituição" class="instituicao-input" required>
+
+        <input type="text"
+        placeholder="Telefone" class="instituicao-input" required>
+
+        <input type="text"
+        placeholder="Cidade"class=" instituicao-input" required>
+
+        <button class="confirm blue"
+        onclick="entrarInstituicao()">
+
+            Ver Doações
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- DOAÇÕES -->
+
+<section id="doacoesTela" class="screen">
+
+    <div class="bg-shape green-shape"></div>
+    <div class="bg-shape blue-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('instituicao')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="filtros">
+
+        <button class="filtro-btn ativo"
+        onclick="filtrarDoacoes('todos', event)">
+
+            Todos
+
+        </button>
+
+        <button class="filtro-btn"
+        onclick="filtrarDoacoes('verdura', event)">
+
+            Verduras
+
+        </button>
+
+        <button class="filtro-btn"
+        onclick="filtrarDoacoes('fruta', event)">
+
+            Frutas
+
+        </button>
+
+    </div>
+
+    <div class="pesquisa-box">
+
+        <input type="text"
+        id="pesquisaInput"
+        placeholder="Pesquisar alimento ou cidade..."
+        onkeyup="pesquisarDoacoes()">
+
+    </div>
+
+    <div class="doacoes-lista">
+
+      <div id="listaDoacoes">
+
+        <div class="doacao"
+        data-tipo="verdura">
+
+            <h3>
+
+                Fazenda Boa esperança
+
+            </h3>
+
+            <p>
+
+                🥬 Alface - 10kg
+
+            </p>
+
+            <span>
+
+                📍 Conselheiro Mairinck - PR
+
+            </span>
+
+            <button onclick="abrirChat('Fazenda Boa Esperança')">
+
+                Entrar em Contato
+
+            </button>
+
+            <p class="data-doacao">
+
+              ⏰ Registrado ontem às 09:30
+
+            </p>
+
+        </div>
+
+        <div class="doacao"
+        data-tipo="fruta">
+
+            <h3>
+
+                Sitio São João
+
+            </h3>
+
+            <p>
+
+                🍎 Maça - 5kg
+
+            </p>
+
+            <span>
+
+                📍 Japira - PR
+
+            </span>
+
+            <button onclick="abrirChat('Sítio São João')">
+
+                Entrar em Contato
+
+            </button>
+
+            <p class="data-doacao">
+
+             ⏰ Registrado ontem às 16:27
+
+             </p>
+
+        </div>
+
+        <div class="doacao"
+        data-tipo="verdura">
+
+            <h3>
+
+                Fazenda Santa Luzia
+
+            </h3>
+
+            <p>
+
+                🥦 Couve - 10kg
+
+            </p>
+
+            <span>
+
+                📍 Ibaiti - PR
+
+            </span>
+
+            <button onclick="abrirChat('Fazenda Santa Luzia')">
+
+                Entrar em Contato
+
+            </button>
+
+            <p class="data-doacao">
+
+            ⏰ Registrado hoje às 08:21
+
+             </p>
+
+        </div>
+
+        <div class="doacao"
+        data-tipo="fruta">
+
+            <h3>
+
+               Fazenda Oliveira
+
+            </h3>
+
+            <p>
+
+                 🍌 Banana - 15kg
+
+            </p>
+
+            <span>
+
+                📍 Tomazina - PR
+
+            </span>
+
+            <button onclick="abrirChat('Fazenda Oliveira')">
+
+                Entrar em Contato
+
+            </button>
+
+            <p class="data-doacao">
+
+             ⏰ Registrado ontem às 20:53
+
+            </p>
+
+        </div>
+
+     </div>
+
+
+    </div>
+
+</section>
+
+<!-- CHAT -->
+
+<section id="chat" class="screen">
+
+    <div class="bg-shape green-shape"></div>
+
+    <button class="back"
+    onclick="trocarTela('doacoesTela')">
+
+        ← Voltar
+
+    </button>
+
+    <div class="chat-box">
+
+        <div class="chat-top">
+
+            <img class="avatar"
+            src="imagens/fazenda1.jpg">
+
+            <h2 id="chatNome">
+
+                Fazenda
+
+            </h2>
+
+        </div>
+
+        <div id="messages"
+        class="messages">
+
+        </div>
+
+        <div class="chat-input">
+
+            <input type="text"
+            id="mensagemInput"
+            placeholder="Digite sua mensagem">
+
+            <button onclick="enviarMensagem()">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- POPUP -->
+
+<div id="popup"
+class="popup">
+
+    ✅ Doação registrada com sucesso!
+
+</div>
+
+// ERRO
+
+<script src="script.js"></script>
+
+<div id="mensagemErro" class="mensagem-erro">
+
+    Preencha todos os campos!
+
+</div>
+
+</body>
+</html>

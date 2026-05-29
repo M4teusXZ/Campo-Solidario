@@ -1,0 +1,1099 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:1rem;
+}
+
+/* DARK MODE */
+
+body.dark{
+
+    background:#0f172a;
+}
+
+body.dark .screen{
+
+    background-color: #0f172a;
+
+    background-image:
+    url("imagens/fundo-noite.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+
+body.dark .logo,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark span,
+body.dark .slogan,
+body.dark .titulo-stats,
+body.dark .subtitulo-stats{
+
+    color:white;
+}
+
+body.dark .card,
+body.dark .doacao,
+body.dark .chat-box,
+body.dark .sobre-box,
+body.dark .stat-card,
+body.dark .passo,
+body.dark .impacto-box{
+
+    background:#1e293b;
+
+    color:white;
+}
+
+body.dark input{
+
+    background:#334155;
+
+    color:white;
+}
+
+body.dark .received{
+
+    background:#334155;
+
+    color:white;
+}
+
+body.dark .mini-btn,
+body.dark .back,
+body.dark .filtro-btn{
+
+    background:#334155;
+
+    color:white;
+}
+
+body.dark .filtro-btn.ativo{
+
+    background:#22c55e;
+
+    color:white;
+}
+
+/* LOADING */
+
+#loading{
+
+    position:fixed;
+
+    width:100%;
+    height:100vh;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    z-index:999999;
+
+    transition:1s;
+}
+
+.loader{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    border:8px solid #d1fae5;
+
+    border-top:8px solid #22c55e;
+
+    animation:girar 1s linear infinite;
+}
+
+@keyframes girar{
+
+    100%{
+
+        transform:rotate(360deg);
+    }
+}
+
+/* TELAS */
+
+.screen{
+
+width:100%;
+    height:100vh;
+
+    display:none;
+
+    justify-content:flex-start;
+    align-items:center;
+
+    flex-direction:column;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    overflow-y:auto;
+
+    padding:30px;
+
+    background-image:
+url("imagens/fundo-dia.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+transition:
+
+background-image 2s ease,
+
+background-color 2s ease,
+
+color 0.3s ease;
+
+}
+
+/* FUNDO */
+
+.bg-shape{
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(80px);
+
+    opacity:0.5;
+}
+
+/* ACESSIBILIDADE */
+
+.acessibilidade{
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    z-index: 999;
+}
+
+.acess-btn{
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    background: #2e9e41;
+
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.menu-acessibilidade{
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+
+    position: absolute;
+
+    top: 75px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.acess-btn{
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    background: #2e9e41;
+
+    color: white;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.menu-acessibilidade.ativo{
+
+    display: flex;
+}
+
+.menu-acessibilidade button{
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #222;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    padding: 0;
+}
+/* HOME */
+
+.home-content{
+
+    text-align:center;
+
+    z-index:2;
+
+    margin-top:70px;
+}
+
+.logo{
+
+    font-size:4.6rem;
+
+    font-weight:800;
+
+    color:#1e293b;
+
+    margin-bottom:15px;
+}
+
+.slogan{
+
+    .slogan{
+
+    font-size:1.2rem;
+}
+
+    color:#475569;
+
+    line-height:1.6;
+
+    max-width:650px;
+}
+
+.home-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+/* BOTÕES */
+
+.btn,
+.confirm{
+
+    border:none;
+
+    padding:18px 35px;
+
+    border-radius:18px;
+
+    color:white;
+
+     font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.btn:hover,
+.confirm:hover,
+.doacao:hover,
+.stat-card:hover,
+.passo:hover{
+
+    transform:translateY(-5px);
+}
+
+.green{
+
+    background:
+    linear-gradient(
+    135deg,
+    #22c55e,
+    #16a34a
+    );
+}
+
+.blue{
+
+    background:
+    linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+    );
+}/* MENU EXTRA */
+
+.menu-extra{
+
+    margin-top:25px;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+.mini-btn{
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:16px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+/* SOBRE */
+
+.sobre-box{
+
+    margin-top:35px;
+
+    max-width:700px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ESTATÍSTICAS */
+
+.stats-container{
+
+    margin-top:120px;
+
+    width:100%;
+    max-width:1000px;
+
+    z-index:2;
+}
+
+.titulo-stats{
+
+    font-size:52px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+}
+
+.subtitulo-stats{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    color:#64748b;
+}
+
+.stats-grid{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    transition:0.3s;
+}
+
+.stat-card h3{
+
+    font-size:2.3rem;
+
+    color:#22c55e;
+
+    margin-bottom:10px;
+}
+
+.ranking-grid{
+
+    margin-top:25px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:20px;
+}
+
+.impacto-box{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+}
+
+/* COMO FUNCIONA */
+
+.funciona-container{
+
+    margin-top:120px;
+
+    width:100%;
+    max-width:900px;
+
+    z-index:2;
+}
+
+.passos{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.passo{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    transition:0.3s;
+}
+
+/* CARD */
+
+.card{
+
+    width:100%;
+    max-width:500px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    margin-top:120px;
+
+    z-index:2;
+}
+
+.card h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.card input{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#f1f5f9;
+
+    outline:none;
+}
+
+/* VOLTAR */
+
+.back{
+
+    position:fixed;
+
+    top:25px;
+    left:25px;
+
+    border:none;
+
+    background:white;
+
+    padding:12px 20px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    z-index:999;
+}
+
+/* FILTROS */
+
+.filtros{
+
+    margin-top:110px;
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    z-index:2;
+}
+
+.filtro-btn{
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:14px;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+.filtro-btn.ativo{
+
+    background:#22c55e;
+
+    color:white;
+}/* PESQUISA */
+
+.pesquisa-box{
+
+    width:100%;
+    max-width:650px;
+
+    margin-top:20px;
+
+    z-index:2;
+}
+
+.pesquisa-box input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:white;
+
+    outline:none;
+}
+
+/* DOAÇÕES */
+
+.doacoes-lista{
+
+    width:100%;
+    max-width:650px;
+
+    margin-top:30px;
+
+    padding-bottom:120px;
+
+    z-index:2;
+}
+
+.doacao{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    margin-bottom:20px;
+
+    transition:0.3s;
+
+    color:#111827;
+}
+
+.doacao h3{
+
+    margin-bottom:10px;
+
+    .doacao h3{
+
+    color:#111827;
+}
+
+body.dark .doacao h3{
+
+    color:white;
+
+}
+}
+
+.doacao p{
+
+    margin-bottom:10px;
+}
+
+.doacao span{
+
+    color:#64748b;
+}
+
+.doacao button{
+
+    margin-top:18px;
+
+    display:block;
+    
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:14px;
+
+    background:#22c55e;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+/* CHAT */
+
+.chat-box{
+
+    width:100%;
+    max-width:550px;
+
+    height:700px;
+
+    background:white;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-top:100px;
+
+    z-index:2;
+}
+
+.chat-top{
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.avatar{
+
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.messages{
+
+    flex:1;
+
+    padding:20px;
+
+    overflow-y:auto;
+
+    background:#f8fafc;
+}
+
+.msg{
+
+    width:fit-content;
+
+    max-width:80%;
+
+    padding:14px;
+
+    border-radius:18px;
+
+    margin-bottom:15px;
+}
+
+.received{
+
+    background:white;
+}
+
+.sent{
+
+    background:#22c55e;
+
+    color:white;
+
+    margin-left:auto;
+}
+
+.chat-input{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:15px;
+}
+
+.chat-input input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#f1f5f9;
+
+    outline:none;
+}
+
+.chat-input button{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 22px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+}
+
+/* POPUP */
+
+.popup{
+
+    position:fixed;
+
+    bottom:30px;
+    right:30px;
+
+    background:#22c55e;
+
+    color:white;
+
+    padding:18px 25px;
+
+    border-radius:18px;
+
+    display:none;
+
+    z-index:9999;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .logo{
+
+        font-size:52px;
+    }
+
+    .home-buttons{
+
+        flex-direction:column;
+    }
+
+    .chat-box{
+
+        height:600px;
+    }
+
+    .titulo-stats{
+
+        font-size:38px;
+    }
+}/* TÍTULO COMO FUNCIONA */
+
+.titulo-funciona{
+
+    font-size:50px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    color:#1e293b;
+}
+
+.subtitulo-funciona{
+
+    text-align:center;
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+    font-size:18px;
+}
+
+/* DARK MODE */
+body.dark .titulo-funciona,
+body.dark .subtitulo-funciona{
+
+    color:white;
+}
+body.dark .screen{
+
+    background-image:
+    url("imagens/fundo-noite.png");
+}
+body.dark .messages{
+
+    background:#0f172a;
+}
+
+body.dark .chat-input{
+
+    background:#1e293b;
+}
+
+body.dark .chat-input input{
+
+    background:#334155;
+
+    color:white;
+}
+body *{
+
+    font-size:inherit;
+}
+
+/* ERRO */
+
+.mensagem-erro{
+
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #e74c3c;
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    display: none;
+
+    z-index: 9999;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity: 0;
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    to{
+
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* CATEGORIA */
+
+.categoria-select{
+
+    width: 100%;
+
+    height: 60px;
+
+    padding: 0 20px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    background: #eef3ff;
+
+    color: #333;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    cursor: pointer;
+}
+body.dark .categoria-select{
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+body.dark .categoria-select option{
+
+    background: #1e1e1e;
+
+    color: white;
+}
+/* CIDADE E DATA */
+
+.cidade-doacao{
+
+    color: #8a8a8a;
+
+    font-size: 16px;
+}
+.data-doacao{
+
+    font-size: 12px;
+
+    color: #888;
+
+    margin-top: 8px;
+}
