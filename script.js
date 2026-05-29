@@ -298,16 +298,16 @@ function abrirChat(nome){
     const fotos = {
 
         "Fazenda Boa Esperança":
-        "imagens/fazenda1.jpg",
+        "imagens/Fazenda1.jpg",
 
         "Sítio São João":
-        "imagens/fazenda2.jpg",
+        "imagens/Fazenda2.jpg",
 
         "Fazenda Santa Luzia":
-        "imagens/fazenda3.jpg",
+        "imagens/Fazenda3.jpg",
 
         "Fazenda Oliveira":
-        "imagens/fazenda4.jpg",
+        "imagens/Fazenda4.jpg",
 
         "default":
         "imagens/usuario-sem-foto.png"
