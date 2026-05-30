@@ -96,7 +96,7 @@ O Campo Solidário promove:
 
 ## 🔊 Sons
 
-* Efeitos sonoros obtidos através da plataforma Mixkit.
+* Efeito sonoro obtidos através da plataforma Mixkit.
 
 ---
 
