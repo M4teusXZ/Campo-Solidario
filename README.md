@@ -88,7 +88,7 @@ O Campo Solidário promove:
 
 ## 🎨 Design e Artes
 
-* Artes e elementos visuais desenvolvidos no Canva.
+* Artes, imagens e elementos visuais desenvolvidos no Canva.
 
 ## 🔤 Tipografia
 
@@ -105,7 +105,3 @@ O Campo Solidário promove:
 Projeto desenvolvido por **Mateus Alves de Siqueira** para o Concurso Agrinho.
 
 ---
-
-# 📷 Preview do Projeto
-
-![Preview do Projeto](imagens/preview.png)
