@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
     },1800);
 });
 
-/* DARK MODE */
+//___________MODO ESCURO____________
 
 const darkBtn =
 document.getElementById("darkModeBtn");
@@ -44,7 +44,7 @@ darkBtn.addEventListener("click", () => {
     }
 });
 
-/* ACESSIBILIDADE */
+//___________ACESSIBILIDADE___________
 
 let tamanhoFonte = 100;
 
@@ -64,7 +64,7 @@ function diminuirFonte(){
     tamanhoFonte + "%";
 }
 
-// REGISTRAR DOAÇÃO
+//____________REGISTRAR DOAÇÃO_______________
 
 function registrarDoacao(){
 
@@ -235,7 +235,7 @@ lista.appendChild(novaDoacao);
     },2500);
 }
 
-/* ABRIR CHAT */
+//____________ABRIR CHAT_______________
 
 function abrirChat(nome){
 
@@ -307,7 +307,7 @@ function abrirChat(nome){
     conversas[nome];
 }
 
-/* ENVIAR MENSAGEM */
+//__________ENVIAR MENSAGEM________________
 
 function enviarMensagem(){
 
@@ -340,7 +340,7 @@ function enviarMensagem(){
     input.value = "";
 }
 
-/* PESQUISA */
+//__________________PESQUISA___________________
 
 function pesquisarDoacoes(){
 
@@ -368,7 +368,7 @@ function pesquisarDoacoes(){
     });
 }
 
-/* ANIMAR NÚMEROS */
+//_______________ANIMAÇÂO DOS NÙMEROS_______________-
 
 function animarNumeros(){
 
@@ -423,7 +423,7 @@ function animarNumeros(){
     });
 }
 
-// ENTRAR INSTITUIÇÃO
+//______________ENTRAR INSTITUIÇÃO_________________
 function entrarInstituicao(){
 
     const inputs =
@@ -476,7 +476,7 @@ function limparFormularioDoacao(){
     .selectedIndex = 0;
 }
 
-// FILTRAR DOAÇÕES
+//____________FILTRAR DOAÇÕES___________________
 function filtrarDoacoes(tipo, event){
 
     const doacoes =
