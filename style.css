@@ -1,4 +1,5 @@
-*{
+/*__________FONTE___________*/
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -11,7 +12,7 @@ body{
     font-size:1rem;
 }
 
-/* DARK MODE */
+/*_____________MODO ESCURO______________*/
 
 body.dark{
 
@@ -89,7 +90,7 @@ body.dark .filtro-btn.ativo{
     color:white;
 }
 
-/* LOADING */
+/*______________TELA DE CARREGAMENTO____________*/
 
 #loading{
 
@@ -178,7 +179,7 @@ color 0.3s ease;
 
 }
 
-/* FUNDO */
+/*_______________FUNDO______________*/
 
 .bg-shape{
 
@@ -194,7 +195,7 @@ color 0.3s ease;
     opacity:0.5;
 }
 
-/* ACESSIBILIDADE */
+/*_______________ACESSIBILIDADE__________________*/
 
 .acessibilidade{
 
@@ -305,7 +306,7 @@ color 0.3s ease;
 
     padding: 0;
 }
-/* HOME */
+/*____________HOME_______________-*/
 
 .home-content{
 
@@ -354,7 +355,7 @@ color 0.3s ease;
     justify-content:center;
 }
 
-/* BOTÕES */
+/*____________BOTÕES__________________*/
 
 .btn,
 .confirm{
@@ -402,8 +403,10 @@ color 0.3s ease;
     135deg,
     #2563eb,
     #1d4ed8
-    );
-}/* MENU EXTRA */
+    );  
+}
+
+/*____________MENU EXTRA___________*/
 
 .menu-extra{
 
@@ -433,7 +436,7 @@ color 0.3s ease;
     font-weight:600;
 }
 
-/* SOBRE */
+/*___________SOBRE_____________*/
 
 .sobre-box{
 
@@ -451,7 +454,7 @@ color 0.3s ease;
     0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* ESTATÍSTICAS */
+/*_______________ESTATÍSTICAS______________*/
 
 .stats-container{
 
@@ -570,7 +573,7 @@ color 0.3s ease;
     transition:0.3s;
 }
 
-/* CARD */
+/*_________CARD___________-*/
 
 .card{
 
@@ -612,7 +615,7 @@ color 0.3s ease;
     outline:none;
 }
 
-/* VOLTAR */
+/*____________VOLTAR______________*/
 
 .back{
 
@@ -673,7 +676,9 @@ color 0.3s ease;
     background:#22c55e;
 
     color:white;
-}/* PESQUISA */
+}
+
+/*____________PESQUISA______________*/
 
 .pesquisa-box{
 
@@ -700,7 +705,7 @@ color 0.3s ease;
     outline:none;
 }
 
-/* DOAÇÕES */
+/*___________-DOAÇÕES______________*/
 
 .doacoes-lista{
 
@@ -774,7 +779,7 @@ body.dark .doacao h3{
     cursor:pointer;
 }
 
-/* CHAT */
+/*_________CHAT__________*/
 
 .chat-box{
 
@@ -900,7 +905,7 @@ body.dark .doacao h3{
     cursor:pointer;
 }
 
-/* POPUP */
+/*___________SOM_____________*/
 
 .popup{
 
@@ -922,7 +927,7 @@ body.dark .doacao h3{
     z-index:9999;
 }
 
-/* RESPONSIVO */
+/*____________RESPONSIVIDADE_______________*/
 
 @media(max-width:768px){
 
@@ -945,7 +950,9 @@ body.dark .doacao h3{
 
         font-size:38px;
     }
-}/* TÍTULO COMO FUNCIONA */
+}
+
+/*__________TÍTULO COMO FUNCIONA___________*/
 
 .titulo-funciona{
 
@@ -969,7 +976,7 @@ body.dark .doacao h3{
     font-size:18px;
 }
 
-/* DARK MODE */
+/*______________MODO ESCURO 2________________*/
 body.dark .titulo-funciona,
 body.dark .subtitulo-funciona{
 
@@ -1001,7 +1008,7 @@ body *{
     font-size:inherit;
 }
 
-/* ERRO */
+/*___________ERRO__________*/
 
 .mensagem-erro{
 
@@ -1043,7 +1050,7 @@ body *{
     }
 }
 
-/* CATEGORIA */
+/*___________CATEGORIA______________*/
 
 .categoria-select{
 
@@ -1081,7 +1088,7 @@ body.dark .categoria-select option{
 
     color: white;
 }
-/* CIDADE E DATA */
+/*_________CIDADE E DATA__________*/
 
 .cidade-doacao{
 
