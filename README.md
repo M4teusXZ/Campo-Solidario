@@ -54,15 +54,6 @@ A plataforma conta com:
 
 ---
 
-## 🎨 UI/UX & Design
-
-- Design moderno e intuitivo
-- Interface responsiva
-- Identidade visual sustentável
-- Experiência simplificada para usuários
-
----
-
 # 🚀 Tecnologias Utilizadas
 
 - HTML5
