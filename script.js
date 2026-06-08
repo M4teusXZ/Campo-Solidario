@@ -1,50 +1,4 @@
-const conversas = {};
-
-let conversaAtual = "";
-
-// SOM DE CONFIRMAÇÃO
-const audio =
-    new Audio(
-    "Som/som.mp3"
-    );
-
-// TROCAR TELAS
-
-function trocarTela(id){
-
-    const inputsInstituicao =
-document.querySelectorAll(".instituicao-input");
-
-inputsInstituicao.forEach(input => {
-
-    input.value = "";
-});
-
-    const telas =
-    document.querySelectorAll(".screen");
-
-    telas.forEach(tela => {
-
-        tela.style.display = "none";
-    });
-
-    if(id !== "doacao"){
-
-    limparFormularioDoacao();
-}
-
-    document.getElementById(id)
-    .style.display = "flex";
-
-    // anima números
-
-    if(id === "estatisticas"){
-
-        animarNumeros();
-    }
-}
-
-/* INICIA HOME */
+//_________INICIO__________
 
 window.onload = () => {
 
@@ -568,4 +522,50 @@ function toggleAcessibilidade(){
     document.getElementById("menuAcessibilidade");
 
     menu.classList.toggle("ativo");
+}
+//___________LIMPAR CONVERSA____________
+const conversas = {};
+
+let conversaAtual = "";
+
+//_________SOM DE CONFIRMAÇÃO_____________
+const audio =
+    new Audio(
+    "Som/som.mp3"
+    );
+
+//________________TROCAR TELAS____________
+
+function trocarTela(id){
+
+    const inputsInstituicao =
+document.querySelectorAll(".instituicao-input");
+
+inputsInstituicao.forEach(input => {
+
+    input.value = "";
+});
+
+    const telas =
+    document.querySelectorAll(".screen");
+
+    telas.forEach(tela => {
+
+        tela.style.display = "none";
+    });
+
+    if(id !== "doacao"){
+
+    limparFormularioDoacao();
+}
+
+    document.getElementById(id)
+    .style.display = "flex";
+
+    // anima números
+
+    if(id === "estatisticas"){
+
+        animarNumeros();
+    }
 }
